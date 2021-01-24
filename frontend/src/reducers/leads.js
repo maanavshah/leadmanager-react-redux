@@ -12,6 +12,7 @@ export default function (state = initialState, action) {
                 leads: action.payload,
             };
         case DELETE_LEAD:
+            debugger
             return {
                 ...state,
                 leads: state.leads.filter((lead) => lead.id !== action.payload),
